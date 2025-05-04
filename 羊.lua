@@ -145,8 +145,8 @@ function library.new(library, name,theme)
         end
       end
 -------------------------GHOST TEAM------------------------------
-GHOSTTransparency = 0.6
-GHOSTcolor = Color3.fromRGB(0,255,0)
+GHOST_1 = 0.6
+GHOST_2 = Color3.fromRGB(0,255,0)
 -------------------------GHOST TEAM------------------------------
 if theme == 'dark' then
     MainColor = Color3.fromRGB(25, 25, 25)
@@ -518,7 +518,7 @@ UIG.Parent = Open
         TabText.Size = UDim2.new(0, 76, 0, 24)
         TabText.Font = Enum.Font.GothamSemibold
         TabText.Text = name
-        TabText.TextColor3 = GHOSTTransparency
+        TabText.TextColor3 = GHOST_1
         TabText.TextSize = 14.000
         TabText.TextXAlignment = Enum.TextXAlignment.Left
         TabText.TextTransparency = 0.2
@@ -584,7 +584,7 @@ UIG.Parent = Open
           SectionText.Size = UDim2.new(0, 401, 0, 36)
           SectionText.Font = Enum.Font.GothamSemibold
           SectionText.Text = name
-          SectionText.TextColor3 = GHOSTcolor
+          SectionText.TextColor3 = GHOST_2
           SectionText.TextSize = 16.000
           SectionText.TextXAlignment = Enum.TextXAlignment.Left
           
@@ -667,10 +667,10 @@ UIG.Parent = Open
             Btn.AutoButtonColor = false
             Btn.Font = Enum.Font.GothamSemibold
             Btn.Text = "   " .. text
-            Btn.TextColor3 = GHOSTcolor
+            Btn.TextColor3 = GHOST_2
             Btn.TextSize = 16.000
             Btn.TextXAlignment = Enum.TextXAlignment.Left
-            Btn.BackgroundTransparency = GHOSTTransparency
+            Btn.BackgroundTransparency = GHOST_1
             
             BtnC.CornerRadius = UDim.new(0, 6)
             BtnC.Name = "BtnC"
@@ -701,8 +701,8 @@ UIG.Parent = Open
           TextLabel.Size = UDim2.new(0, 428, 0, 22)
           TextLabel.Font = Enum.Font.GothamSemibold
           TextLabel.Text = text
-          TextLabel.TextColor3 = GHOSTcolor
-          TextLabel.BackgroundTransparency = GHOSTTransparency
+          TextLabel.TextColor3 = GHOST_2
+          TextLabel.BackgroundTransparency = GHOST_1
           TextLabel.TextSize = 14.000
     
           LabelC.CornerRadius = UDim.new(0, 6)
@@ -738,13 +738,13 @@ UIG.Parent = Open
             ToggleBtn.Name = "ToggleBtn"
             ToggleBtn.Parent = ToggleModule
             ToggleBtn.BackgroundColor3 = zyColor
-            ToggleBtn.BackgroundTransparency = GHOSTTransparency
+            ToggleBtn.BackgroundTransparency = GHOST_1
             ToggleBtn.BorderSizePixel = 0
             ToggleBtn.Size = UDim2.new(0, 428, 0, 38)
             ToggleBtn.AutoButtonColor = false
             ToggleBtn.Font = Enum.Font.GothamSemibold
             ToggleBtn.Text = "   " .. text
-            ToggleBtn.TextColor3 = GHOSTcolor
+            ToggleBtn.TextColor3 = GHOST_2
             ToggleBtn.TextSize = 16.000
             ToggleBtn.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -851,7 +851,7 @@ UIG.Parent = Open
             KeybindBtn.AutoButtonColor = false
             KeybindBtn.Font = Enum.Font.GothamSemibold
             KeybindBtn.Text = "   " .. text
-            KeybindBtn.TextColor3 = GHOSTcolor
+            KeybindBtn.TextColor3 = GHOST_2
             KeybindBtn.TextSize = 16.000
             KeybindBtn.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -943,13 +943,13 @@ UIG.Parent = Open
             TextboxBack.Name = "TextboxBack"
             TextboxBack.Parent = TextboxModule
             TextboxBack.BackgroundColor3 = zyColor
-            TextboxBack.BackgroundTransparency = GHOSTTransparency
+            TextboxBack.BackgroundTransparency = GHOST_1
             TextboxBack.BorderSizePixel = 0
             TextboxBack.Size = UDim2.new(0, 428, 0, 38)
             TextboxBack.AutoButtonColor = false
             TextboxBack.Font = Enum.Font.GothamSemibold
             TextboxBack.Text = "   " .. text
-            TextboxBack.TextColor3 = GHOSTcolor
+            TextboxBack.TextColor3 = GHOST_2
             TextboxBack.TextSize = 16.000
             TextboxBack.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1044,13 +1044,13 @@ UIG.Parent = Open
             SliderBack.Name = "SliderBack"
             SliderBack.Parent = SliderModule
             SliderBack.BackgroundColor3 = zyColor
-            SliderBack.BackgroundTransparency = GHOSTTransparency
+            SliderBack.BackgroundTransparency = GHOST_1
             SliderBack.BorderSizePixel = 0
             SliderBack.Size = UDim2.new(0, 428, 0, 38)
             SliderBack.AutoButtonColor = false
             SliderBack.Font = Enum.Font.GothamSemibold
             SliderBack.Text = "   " .. text
-            SliderBack.TextColor3 = GHOSTcolor
+            SliderBack.TextColor3 = GHOST_2
             SliderBack.TextSize = 16.000
             SliderBack.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1062,7 +1062,7 @@ UIG.Parent = Open
             SliderBar.Parent = SliderBack
             SliderBar.AnchorPoint = Vector2.new(0, 0.5)
             SliderBar.BackgroundColor3 = Background
-            SliderBar.BackgroundTransparency = GHOSTTransparency
+            SliderBar.BackgroundTransparency = GHOST_1
             SliderBar.BorderSizePixel = 0
             SliderBar.Position = UDim2.new(0.369000018, 40, 0.5, 0)
             SliderBar.Size = UDim2.new(0, 140, 0, 12)
@@ -1084,7 +1084,7 @@ UIG.Parent = Open
             SliderValBG.Name = "SliderValBG"
             SliderValBG.Parent = SliderBack
             SliderValBG.BackgroundColor3 = Background
-            SliderValBG.BackgroundTransparency = GHOSTTransparency
+            SliderValBG.BackgroundTransparency = GHOST_1
             SliderValBG.BorderSizePixel = 0
             SliderValBG.Position = UDim2.new(0.883177578, 0, 0.131578952, 0)
             SliderValBG.Size = UDim2.new(0, 44, 0, 28)
@@ -1118,7 +1118,7 @@ UIG.Parent = Open
             MinSlider.Size = UDim2.new(0, 20, 0, 20)
             MinSlider.Font = Enum.Font.Gotham
             MinSlider.Text = "-"
-            MinSlider.TextColor3 = GHOSTcolor
+            MinSlider.TextColor3 = GHOST_2
             MinSlider.TextSize = 24.000
             MinSlider.TextWrapped = true
             
@@ -1132,7 +1132,7 @@ UIG.Parent = Open
             AddSlider.Size = UDim2.new(0, 20, 0, 20)
             AddSlider.Font = Enum.Font.Gotham
             AddSlider.Text = "+"
-            AddSlider.TextColor3 = GHOSTcolor
+            AddSlider.TextColor3 = GHOST_2
             AddSlider.TextSize = 24.000
             AddSlider.TextWrapped = true
             
@@ -1271,13 +1271,13 @@ UIG.Parent = Open
             DropdownTop.Name = "DropdownTop"
             DropdownTop.Parent = DropdownModule
             DropdownTop.BackgroundColor3 = zyColor
-            DropdownTop.BackgroundTransparency = GHOSTTransparency
+            DropdownTop.BackgroundTransparency = GHOST_1
             DropdownTop.BorderSizePixel = 0
             DropdownTop.Size = UDim2.new(0, 428, 0, 38)
             DropdownTop.AutoButtonColor = false
             DropdownTop.Font = Enum.Font.GothamSemibold
             DropdownTop.Text = ""
-            DropdownTop.TextColor3 = GHOSTcolor
+            DropdownTop.TextColor3 = GHOST_2
             DropdownTop.TextSize = 16.000
             DropdownTop.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1295,7 +1295,7 @@ UIG.Parent = Open
             DropdownOpen.Size = UDim2.new(0, 20, 0, 20)
             DropdownOpen.Font = Enum.Font.Gotham
             DropdownOpen.Text = "+"
-            DropdownOpen.TextColor3 = GHOSTcolor
+            DropdownOpen.TextColor3 = GHOST_2
             DropdownOpen.TextSize = 24.000
             DropdownOpen.TextWrapped = true
             
@@ -1385,7 +1385,7 @@ UIG.Parent = Open
               Option.AutoButtonColor = false
               Option.Font = Enum.Font.Gotham
               Option.Text = option
-              Option.TextColor3 = GHOSTcolor
+              Option.TextColor3 = GHOST_2
               Option.TextSize = 14.000
               
               OptionC.CornerRadius = UDim.new(0, 6)
