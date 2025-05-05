@@ -1,7 +1,7 @@
- --[[GHOST TEAM★独家制作]]
+-- [[GHOST TEAM★独家制作]]
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ghost-Gui-888/UI/main/inform/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ghost-Gui-888/UI/main/inform/Client.Lua"))()
-
+-- 加入鬼脚本群聊：https://qm.qq.com/q/FcwuNXygTK
  Notification:Notify( 
      {Title = "GHOST SCRIPT", Description = "作者：鬼"}, 
      {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "image"}, 
@@ -146,7 +146,9 @@ function library.new(library, name,theme)
 GSTransparency = 0.6
 GScolor = Color3.fromRGB(0,255,0)
 -------------------------GHOST TEAM------------------------------
-if theme == 'dark' then
+
+-------------------------GHOST TEAM------------------------------
+if theme == 'dark' then -- 主要颜色
     MainColor = Color3.fromRGB(25, 25, 25)
     Background = Color3.fromRGB(25, 25, 25)
     zyColor= Color3.fromRGB(25, 25, 25)
@@ -157,7 +159,8 @@ if theme == 'dark' then
     zyColor= Color3.fromRGB(25, 25, 25)
     beijingColor = Color3.fromRGB(25, 25, 25)
 end
-      local dogent = Instance.new("ScreenGui")
+-------------------------GHOST TEAM------------------------------   
+      local GS = Instance.new("ScreenGui")
       local Main = Instance.new("Frame")
       local TabMain = Instance.new("Frame")
       local MainC = Instance.new("UICorner")
@@ -180,27 +183,27 @@ end
       local UICorner = Instance.new("UICorner")
       local UICorner_2 = Instance.new("UICorner")
       
-      if syn and syn.protect_gui then syn.protect_gui(dogent) end
+      if syn and syn.protect_gui then syn.protect_gui(GS) end
     
-      dogent.Name = "frosty"
-      dogent.Parent = services.CoreGui
+      GS.Name = "frosty"
+      GS.Parent = services.CoreGui
       
       function UiDestroy()
-          dogent:Destroy()
+          GS:Destroy()
       end
       
           function ToggleUILib()
             if not ToggleUI then
-                dogent.Enabled = false
+                GS.Enabled = false
                 ToggleUI = true
                 else
                 ToggleUI = false
-                dogent.Enabled = true
+                GS.Enabled = true
             end
         end
       
       Main.Name = "Main"
-      Main.Parent = dogent
+      Main.Parent = GS
       Main.AnchorPoint = Vector2.new(0.5, 0.5)
       Main.BackgroundColor3 = Background
       Main.BorderColor3 = MainColor
@@ -237,7 +240,6 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://87437251671184" -- 背景
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -434,7 +436,7 @@ end
         TabBtns.CanvasSize = UDim2.new(0, 0, 0, TabBtnsL.AbsoluteContentSize.Y + 18)
       end)
 
-Frame.Parent = dogent
+Frame.Parent = GS
 Frame.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -449,13 +451,14 @@ Open.Parent = Frame
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Open.BorderSizePixel = 0
-Open.Size = UDim2.new(20, 0, 20, 0)
-Open.Active = true
+Open.Size = UDim2.new(0, 50, 0, 50)
+Open.Position = UDim2.new(0.00829315186, 0, 0.13107837, 0)
+Open.Active = true  
 Open.Draggable = true
 Open.Image = "rbxassetid://78699805802392" -- 默认
 Open.MouseButton1Click:Connect(function()
   Main.Visible = not Main.Visible
-  Open.Image = Main.Visible and "rbxassetid://78699805802392" or "rbxassetid://78699805802392" --开关的图
+  Open.Image = Main.Visible and "rbxassetid://78699805802392" --开关的图
 end)
 
 UICorner_2.CornerRadius = UDim.new(0, 90)
@@ -484,7 +487,7 @@ UIG.Parent = Open
         TabIco.BackgroundTransparency = 1.000
         TabIco.BorderSizePixel = 0
         TabIco.Size = UDim2.new(0, 24, 0, 24)
-        TabIco.Image = "rbxassetid://78699805802392" or icon and "rbxassetid://"..icon -- 左边一栏
+        TabIco.Image = ("rbxassetid://%s"):format((icon or 4370341699))
         TabIco.ImageTransparency = 0.2
         
         TabText.Name = "TabText"
